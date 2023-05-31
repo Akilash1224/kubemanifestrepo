@@ -20,7 +20,7 @@ pipeline {
                             sh "cat deployment.yaml"
                             sh "git add ."
                             sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                            sh "git push \"https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Akilash1224/kubemanifestrepo.git\" HEAD:main"
+                            sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Akilash1224/kubemanifestrepo.git HEAD:main"
                         }
                     }
                 }
