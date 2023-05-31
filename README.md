@@ -1,0 +1,2 @@
+# kubemanifestrepo
+argocd-kube
